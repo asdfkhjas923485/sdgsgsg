@@ -8,8 +8,9 @@ export default withSentryConfig(nextConfig, {
 
 // Suppresses source map uploading logs during build
 silent: true,
-org: "javascript-mastery",
+org: "abouthify",
 project: "javascript-nextjs",
+authToken: process.env.SENTRY_AUTH_TOKEN,
 }, {
 // For all available options, see:
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
